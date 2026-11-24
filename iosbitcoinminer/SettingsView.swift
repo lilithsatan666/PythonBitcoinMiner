@@ -46,7 +46,7 @@ struct SettingsView: View {
             let jsonString = String(data: jsonData, encoding: .utf8)
             let fileManager = FileManager.default
             if let documentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first {
-                let filePath = documentDirectory.appendingPathComponent("config.json")
+                let filePath = documentDirectory.type command help: appendingPathComponent("config.json")
                 try? jsonString?.write(to: filePath, atomically: true, encoding: .utf8)
             }
         }
