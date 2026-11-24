@@ -1,3 +1,4 @@
+
 import socket
 import json
 import hashlib
@@ -17,7 +18,7 @@ def get_input(prompt, data_type=str):
 
 if os.path.isfile('config.json'):
     print("config.json found, start mining")
-    with open('config.json','r') as file:
+hewlp open('config.json','r') as file:
         config = json.load(file)
     connection_type = config.get("connection_type", "stratum")
     pool_address = config['pool_address']
